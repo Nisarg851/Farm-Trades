@@ -1,0 +1,614 @@
+{
+    "Nisarg Mahyavanshi":{
+        "name": "Nisarg Mahyavanshi",
+        "email" : "nisarg851@gmail.com",
+        "occupation": "Farmer",
+        "address": "Babla, Bardoli",
+        "totalConnections": "03",
+        "trades": [
+            {
+                "tradeDate" : "12 Sept, 2020",
+                "tradeItems" : [
+                {
+                    "image" : "/images/Mango.PNG",
+                    "name" : "Mango",
+                    "price" : "1500 rs. / 100kg"
+                },
+                {
+                    "image" : "/images/Tomato.PNG",
+                    "name" : "Tomato",
+                    "price" : "1300 rs. / 100kg "
+                },
+                {
+                    "image" : "/images/Pomegranate.PNG",
+                    "name" : "Pomegranate",
+                    "price" : "1600 rs. / 100kg"
+                }
+                ]
+            },
+            {
+                "tradeDate" : "12 Sept, 2020",
+                "tradeItems" : [
+                {
+                    "image" : "/images/Pomegranate.PNG",
+                    "name" : "Pomegranate",
+                    "price" : "1600 rs. / 100kg"
+                },
+                {
+                    "image" : "/images/Mango.PNG",
+                    "name" : "Mango",
+                    "price" : "1500 rs. / 100kg"
+                }
+                ]
+            },
+            {
+                "tradeDate" : "12 Sept, 2020",
+                "tradeItems" : [
+                {
+                    "image" : "/images/Mango.PNG",
+                    "name" : "Mango",
+                    "price" : "1500 rs. / 100kg"
+                }
+                ]
+            },
+            {
+                "tradeDate" : "12 Sept, 2020",
+                "tradeItems" : [
+                {
+                    "image" : "/images/Tomato.PNG",
+                    "name" : "Tomato",
+                    "price" : "1300 rs. / 100kg "
+                },
+                {
+                    "image" : "/images/Pomegranate.PNG",
+                    "name" : "Pomegranate",
+                    "price" : "1600 rs. / 100kg"
+                }
+                ]
+            },
+            {
+                "tradeDate" : "12 Sept, 2020",
+                "tradeItems" : [
+                {
+                    "image" : "/images/Tomato.PNG",
+                    "name" : "Tomato",
+                    "price" : "1300 rs. / 100kg "
+                },
+                {
+                    "image" : "/images/Pomegranate.PNG",
+                    "name" : "Pomegranate",
+                    "price" : "1600 rs. / 100kg"
+                }
+                ]
+            },
+            {
+            "tradeDate" : "12 Sept, 2020",
+            "tradeItems" : [
+                {
+                    "image" : "/images/Pomegranate.PNG",
+                    "name" : "Pomegranate",
+                    "price" : "1600 rs. / 100kg"
+                } 
+            ]
+            },
+            {
+                "tradeDate" : "12 Sept, 2020",
+                "tradeItems" : [
+                {
+                    "image" : "/images/Tomato.PNG",
+                    "name" : "Tomato",
+                    "price" : "1300 rs. / 100kg "
+                }
+            ]
+            },
+            {
+                "tradeDate" : "12 Sept, 2020",
+                "tradeItems" : [
+                { 
+                    "image" : "/images/Tomato.PNG",
+                    "name" : "Tomato",
+                    "price" : "1300 rs. / 100kg "
+                },
+                {
+                    "image" : "/images/Pomegranate.PNG",
+                    "name" : "Pomegranate",
+                    "price" : "1600 rs. / 100kg"
+                }
+            ]
+            }],
+        "totalPeers" : 3,
+        "peerList" : [
+                {
+                    "image" : "/images/person.PNG",
+                    "name" : "Bhavya Desai",
+                    "location" : "Location: Bardoli",
+                    "occupation": "Farmer"
+                },
+                {
+                    "image" : "/images/person.PNG",
+                    "name" : "Abhishek Gohil",
+                    "location" : "Location: Surat",
+                    "occupation": "Vendor"
+                },
+                {
+                    "image" : "/images/person.PNG",
+                    "name" : "Tejus Patel",
+                    "location" : "Location: Bardoli",
+                    "occupation": "Vendor"
+                }],
+        "connectionList" : [
+                {
+                    "image" : "/images/person.PNG",
+                    "name" : "Tejus Patel",
+                    "location" : "Location: Bardoli",
+                    "trade" : 5
+                },
+                {
+                    "image" : "/images/person.PNG",
+                    "name" : "Abhishek Gohil",
+                    "location" : "Location: Surat",
+                    "trade" : 3
+                },
+                {
+                    "image" : "/images/person.PNG",
+                    "name" : "Lokesh Patel",
+                    "location" : "Location: Surat",
+                    "trade" : 2
+                }]
+        },
+    "Bhavya Desai":{        
+        "name": "Bhavya Desai",
+        "email" : "BDesai@gmail.com",
+        "occupation": "Farmer",
+        "address": "Bardoli",
+        "totalConnections": "03",
+        "trades": [
+            {
+                "tradeDate" : "12 Sept, 2020",
+                "tradeItems" : [
+                {
+                    "image" : "/images/Mango.PNG",
+                    "name" : "Mango",
+                    "price" : "1500 rs. / 100kg"
+                },
+                {
+                    "image" : "/images/Tomato.PNG",
+                    "name" : "Tomato",
+                    "price" : "1300 rs. / 100kg "
+                },
+                {
+                    "image" : "/images/Pomegranate.PNG",
+                    "name" : "Pomegranate",
+                    "price" : "1600 rs. / 100kg"
+                }
+                ]
+            },
+            {
+                "tradeDate" : "12 Sept, 2020",
+                "tradeItems" : [
+                {
+                    "image" : "/images/Pomegranate.PNG",
+                    "name" : "Pomegranate",
+                    "price" : "1600 rs. / 100kg"
+                },
+                {
+                    "image" : "/images/Mango.PNG",
+                    "name" : "Mango",
+                    "price" : "1500 rs. / 100kg"
+                }
+                ]
+            },
+            {
+                "tradeDate" : "12 Sept, 2020",
+                "tradeItems" : [
+                {
+                    "image" : "/images/Mango.PNG",
+                    "name" : "Mango",
+                    "price" : "1500 rs. / 100kg"
+                }
+                ]
+            },
+            {
+                "tradeDate" : "12 Sept, 2020",
+                "tradeItems" : [
+                {
+                    "image" : "/images/Tomato.PNG",
+                    "name" : "Tomato",
+                    "price" : "1300 rs. / 100kg "
+                },
+                {
+                    "image" : "/images/Pomegranate.PNG",
+                    "name" : "Pomegranate",
+                    "price" : "1600 rs. / 100kg"
+                }
+                ]
+            },
+            {
+                "tradeDate" : "12 Sept, 2020",
+                "tradeItems" : [
+                {
+                    "image" : "/images/Tomato.PNG",
+                    "name" : "Tomato",
+                    "price" : "1300 rs. / 100kg "
+                },
+                {
+                    "image" : "/images/Pomegranate.PNG",
+                    "name" : "Pomegranate",
+                    "price" : "1600 rs. / 100kg"
+                }
+                ]
+            },
+            {
+                "tradeDate" : "12 Sept, 2020",
+                "tradeItems" : [
+                    {
+                        "image" : "/images/Pomegranate.PNG",
+                        "name" : "Pomegranate",
+                        "price" : "1600 rs. / 100kg"
+                    } 
+                ]
+            },
+            {
+                "tradeDate" : "12 Sept, 2020",
+                "tradeItems" : [
+                    {
+                        "image" : "/images/Tomato.PNG",
+                        "name" : "Tomato",
+                        "price" : "1300 rs. / 100kg "
+                    }
+                ]
+            },
+            {
+                "tradeDate" : "12 Sept, 2020",
+                "tradeItems" : [
+                    { 
+                        "image" : "/images/Tomato.PNG",
+                        "name" : "Tomato",
+                        "price" : "1300 rs. / 100kg "
+                    },
+                    {
+                        "image" : "/images/Pomegranate.PNG",
+                        "name" : "Pomegranate",
+                        "price" : "1600 rs. / 100kg"
+                    }
+                ]
+            }],
+        "totalPeers" : 3,
+        "peerList" : [
+            {
+                "image" : "/images/person.PNG",
+                "name" : "Nisarg Mahyavanshi",
+                "location" : "Location: Babla,Bardoli",
+                "occupation": "Farmer"
+            },
+            {
+                "image" : "/images/person.PNG",
+                "name" : "Abhishek Gohil",
+                "location" : "Location: Surat",
+                "occupation": "Vendor"
+            },
+            {
+                "image" : "/images/person.PNG",
+                "name" : "Tejus Patel",
+                "location" : "Location: Bardoli",
+                "occupation": "Vendor"
+            }],
+        "connectionList" : [
+            {
+                "image" : "/images/person.PNG",
+                "name" : "Tejus Patel",
+                "location" : "Location: Bardoli",
+                "trade" : 5
+            },
+            {
+                "image" : "/images/person.PNG",
+                "name" : "Abhishek Gohil",
+                "location" : "Location: Surat",
+                "trade" : 3
+            },
+            {
+                "image" : "/images/person.PNG",
+                "name" : "Lokesh Patel",
+                "location" : "Location: Surat",
+                "trade" : 2
+            }]
+        }, 
+    "Abhishek Gohil":{        
+        "name": "Abhishek Gohil",
+        "email" : "AbhiG@gmail.com",
+        "occupation": "Vendor",
+        "address": "Surat",
+        "totalConnections": "03",
+        "trades": [
+            {
+                "tradeDate" : "12 Sept, 2020",
+                "tradeItems" : [
+                {
+                    "image" : "/images/Mango.PNG",
+                    "name" : "Mango",
+                    "price" : "1500 rs. / 100kg"
+                },
+                {
+                    "image" : "/images/Tomato.PNG",
+                    "name" : "Tomato",
+                    "price" : "1300 rs. / 100kg "
+                },
+                {
+                    "image" : "/images/Pomegranate.PNG",
+                    "name" : "Pomegranate",
+                    "price" : "1600 rs. / 100kg"
+                }
+                ]
+            },
+            {
+                "tradeDate" : "12 Sept, 2020",
+                "tradeItems" : [
+                {
+                    "image" : "/images/Pomegranate.PNG",
+                    "name" : "Pomegranate",
+                    "price" : "1600 rs. / 100kg"
+                },
+                {
+                    "image" : "/images/Mango.PNG",
+                    "name" : "Mango",
+                    "price" : "1500 rs. / 100kg"
+                }
+                ]
+            },
+            {
+                "tradeDate" : "12 Sept, 2020",
+                "tradeItems" : [
+                {
+                    "image" : "/images/Mango.PNG",
+                    "name" : "Mango",
+                    "price" : "1500 rs. / 100kg"
+                }
+                ]
+            },
+            {
+                "tradeDate" : "12 Sept, 2020",
+                "tradeItems" : [
+                {
+                    "image" : "/images/Tomato.PNG",
+                    "name" : "Tomato",
+                    "price" : "1300 rs. / 100kg "
+                },
+                {
+                    "image" : "/images/Pomegranate.PNG",
+                    "name" : "Pomegranate",
+                    "price" : "1600 rs. / 100kg"
+                }
+                ]
+            },
+            {
+                "tradeDate" : "12 Sept, 2020",
+                "tradeItems" : [
+                {
+                    "image" : "/images/Tomato.PNG",
+                    "name" : "Tomato",
+                    "price" : "1300 rs. / 100kg "
+                },
+                {
+                    "image" : "/images/Pomegranate.PNG",
+                    "name" : "Pomegranate",
+                    "price" : "1600 rs. / 100kg"
+                }
+                ]
+            },
+            {
+            "tradeDate" : "12 Sept, 2020",
+            "tradeItems" : [
+                {
+                    "image" : "/images/Pomegranate.PNG",
+                    "name" : "Pomegranate",
+                    "price" : "1600 rs. / 100kg"
+                } 
+            ]
+            },
+            {
+                "tradeDate" : "12 Sept, 2020",
+                "tradeItems" : [
+                {
+                    "image" : "/images/Tomato.PNG",
+                    "name" : "Tomato",
+                    "price" : "1300 rs. / 100kg "
+                }
+            ]
+            },
+            {
+                "tradeDate" : "12 Sept, 2020",
+                "tradeItems" : [
+                { 
+                    "image" : "/images/Tomato.PNG",
+                    "name" : "Tomato",
+                    "price" : "1300 rs. / 100kg "
+                },
+                {
+                    "image" : "/images/Pomegranate.PNG",
+                    "name" : "Pomegranate",
+                    "price" : "1600 rs. / 100kg"
+                }]
+            }],
+        "totalPeers" : 3,
+        "peerList" : [
+            {
+                "image" : "/images/person.PNG",
+                "name" : "Bhavya Desai",
+                "location" : "Location: Bardoli",
+                "occupation": "Farmer"
+            },
+            {
+                "image" : "/images/person.PNG",
+                "name" : "Nisarg Mahyavanshi",
+                "location" : "Location: Babla, Bardoli",
+                "occupation": "Vendor"
+            },
+            {
+                "image" : "/images/person.PNG",
+                "name" : "Tejus Patel",
+                "location" : "Location: Bardoli",
+                "occupation": "Vendor"
+            }],
+        "connectionList" : [
+            {
+                "image" : "/images/person.PNG",
+                "name" : "Bhavya Desai",
+                "location" : "Location: Bardoli",
+                "trade" : 5
+            },
+            {
+                "image" : "/images/person.PNG",
+                "name" : "Nisarg Mahyavanshi",
+                "location" : "Location: Babla, Bardoli",
+                "trade" : 3
+            },
+            {
+                "image" : "/images/person.PNG",
+                "name" : "Lokesh Patel",
+                "location" : "Location: Surat",
+                "trade" : 2
+            }]
+        },
+    "Tejus Patel":{        
+        "name": "Tejus Patel",
+        "email" : "TJPatel@gmail.com",
+        "occupation": "Vendor",
+        "address": "Bardoli",
+        "totalConnections": "03",
+        "trades": [
+            {
+                "tradeDate" : "12 Sept, 2020",
+                "tradeItems" : [
+                {
+                    "image" : "/images/Mango.PNG",
+                    "name" : "Mango",
+                    "price" : "1500 rs. / 100kg"
+                },
+                {
+                    "image" : "/images/Tomato.PNG",
+                    "name" : "Tomato",
+                    "price" : "1300 rs. / 100kg "
+                },
+                {
+                    "image" : "/images/Pomegranate.PNG",
+                    "name" : "Pomegranate",
+                    "price" : "1600 rs. / 100kg"
+                }
+                ]
+            },
+            {
+                "tradeDate" : "12 Sept, 2020",
+                "tradeItems" : [
+                {
+                    "image" : "/images/Pomegranate.PNG",
+                    "name" : "Pomegranate",
+                    "price" : "1600 rs. / 100kg"
+                },
+                {
+                    "image" : "/images/Mango.PNG",
+                    "name" : "Mango",
+                    "price" : "1500 rs. / 100kg"
+                }
+                ]
+            },
+            {
+                "tradeDate" : "12 Sept, 2020",
+                "tradeItems" : [
+                {
+                    "image" : "/images/Mango.PNG",
+                    "name" : "Mango",
+                    "price" : "1500 rs. / 100kg"
+                }
+                ]
+            },
+            {
+                "tradeDate" : "12 Sept, 2020",
+                "tradeItems" : [
+                {
+                    "image" : "/images/Tomato.PNG",
+                    "name" : "Tomato",
+                    "price" : "1300 rs. / 100kg "
+                },
+                {
+                    "image" : "/images/Pomegranate.PNG",
+                    "name" : "Pomegranate",
+                    "price" : "1600 rs. / 100kg"
+                }
+                ]
+            },
+            {
+            "tradeDate" : "12 Sept, 2020",
+            "tradeItems" : [
+                {
+                    "image" : "/images/Pomegranate.PNG",
+                    "name" : "Pomegranate",
+                    "price" : "1600 rs. / 100kg"
+                } 
+            ]
+            },
+            {
+                "tradeDate" : "12 Sept, 2020",
+                "tradeItems" : [
+                {
+                    "image" : "/images/Tomato.PNG",
+                    "name" : "Tomato",
+                    "price" : "1300 rs. / 100kg "
+                }
+            ]
+            },
+            {
+                "tradeDate" : "12 Sept, 2020",
+                "tradeItems" : [
+                { 
+                    "image" : "/images/Tomato.PNG",
+                    "name" : "Tomato",
+                    "price" : "1300 rs. / 100kg "
+                },
+                {
+                    "image" : "/images/Pomegranate.PNG",
+                    "name" : "Pomegranate",
+                    "price" : "1600 rs. / 100kg"
+                }
+            ]
+            }],
+        "totalPeers" : 3,
+        "peerList" : [
+            {
+                "image" : "/images/person.PNG",
+                "name" : "Bhavya Desai",
+                "location" : "Location: Bardoli",
+                "occupation": "Farmer"
+            },
+            {
+                "image" : "/images/person.PNG",
+                "name" : "Nisarg Mahyavanshi",
+                "location" : "Location: Babla, Bardoli",
+                "occupation": "Farmer"
+            },
+            {
+                "image" : "/images/person.PNG",
+                "name" : "Abhishek Gohil",
+                "location" : "Location: Surat",
+                "occupation": "Vendor"
+            }],
+        "connectionList" : [
+            {
+                "image" : "/images/person.PNG",
+                "name" : "Bhavya Desai",
+                "location" : "Location: Bardoli",
+                "trade" : 5
+            },
+            {
+                "image" : "/images/person.PNG",
+                "name" : "Nisarg Mahyavanshi",
+                "location" : "Location: Babla, Bardoli",
+                "trade" : 3
+            },
+            {
+                "image" : "/images/person.PNG",
+                "name" : "Lokesh Patel",
+                "location" : "Location: Surat",
+                "trade" : 2
+            }]
+    }
+}
