@@ -1,0 +1,624 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root{
+    --theme-color : rgb(1, 187, 163); 
+    background-color: var(--theme-color);
+    width: auto;
+    height: auto;
+}
+
+body{
+    background-color: white;
+    width: 100%;
+    height: 100%;
+}
+
+/*----------------------------- Test -------------------------------------- */
+/* ------------------------------------------------------------------------------
+------------------------------------------------------------------------
+---------------------------------------------------------------- */
+.nav{
+    justify-content: space-between;
+    height: 7.2rem;
+    display: flex;
+    align-items: center;
+}
+.nav-list{
+    list-style: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 80%;
+    height: 100vh;
+    background-color: black;
+    opacity: 0.8;
+    padding: 0rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    z-index: 1250;
+    transform: translateX(-100%);
+    transition: transform .5s;
+}
+.nav-item{
+    margin: 0 2.4rem;
+    align-items: center;
+    text-align: center;
+    border-bottom: 2px solid rgba(255, 255, 255, .3);
+}
+.nav-link{
+    display: block;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    margin-right: -2px;
+    transition: color.5s;
+}
+.menu-toggle{
+    /* border: solid; */
+    width: 100%;
+}
+.fas.fa-times{
+    display: none;
+}
+.open .nav-list{
+    transform: translateX(0);
+}
+.open .nav::before{
+    opacity: 1;
+    transform: scale(1);
+}
+.open .fas.fa-times{
+    display: block;
+    width: auto;
+    height: auto;
+    border: solid;
+    /* transform: translateX(0); */
+    margin-left: 70vw;
+}
+.open .bars{
+    display: none;
+}
+/*----------------------------- Test -------------------------------------- */
+/* ------------------------------------------------------------------------------
+------------------------------------------------------------------------
+---------------------------------------------------------------- */
+
+.user-info{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    /* justify-content: space-between; */
+}
+
+.circle{
+    border-radius: 50%;
+    /* border: 1px solid; */
+}
+
+.profile{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    /* border: solid; */
+}
+
+.profile-picture{
+    padding: 15px;
+    border: 1px solid;
+}
+
+.connection{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    /* padding-left: 0px; */
+    padding-top: 70px;
+    /* border: solid; */
+}
+
+.connection h1{
+    padding: 15px;
+    background-color: var(--theme-color);
+}
+
+.message{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 70px;
+    cursor: pointer;
+    /* border: solid; */
+}
+
+.message h1{
+    padding: 15px;
+    background-color: var(--theme-color);
+}
+
+.user-info-menu ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-between;
+    list-style: none;
+    margin-top: 5px;
+    padding: 10px;
+    /* border-bottom: 1px solid ; */
+    border-radius: 25px;
+}
+
+.user-info-menu ul li a{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: black;
+    padding: 5px;
+    /* border: 1px solid red; */
+    border-radius: 15px 15px 15px 15px;
+}
+
+.btn{
+    border: 2px solid var(--theme-color);
+    border-radius: 20px;
+}
+
+.active{
+    width: 100%;
+    height: 100%;
+    color: white;
+    border-radius: 15px 15px 15px 15px;
+    margin: 0px;
+    background-color: var(--theme-color);
+}
+
+/*---------------------------------------- Previous Trades----------------------------------------------------------*/
+.previous-trade{
+    width: 100%;
+    height: 60vh;
+    background-color: var(--theme-color);
+    overflow: scroll;
+    border-top: 2px solid black;
+    border-radius: 25px;
+    height: 60vh; 
+    /* border: solid red; */
+}
+
+.trade{
+    border: 1px solid black;
+    background-color: white;
+    margin: 5px;
+    border-radius: 20px;
+}
+
+.trade-date{
+    margin-left: 10px;
+}
+
+.item{
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr;
+    justify-content: space-between;
+    border-top: 1px ridge black;
+}
+
+.item img{
+    border-radius: 50%;
+    border: solid;
+    margin: 5px;
+}
+
+.item h4{
+    /* border: solid; */
+    margin-left: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*---------------------------------------- Peer Farmers -------------------------------------------------------- */
+.peers{
+    height: 60vh;
+    border: 1px solid black;
+    background-color: white;
+    margin: 5px;
+    border-radius: 20px;
+    overflow: scroll;
+}
+
+.total-peers{
+    /* border: solid black; */
+    display: flex;
+    justify-content: center;
+    color: var(--theme-color);
+    text-shadow: 0px 0px 5px white ,0px 0px 5px black;
+}
+
+.peers-list{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.peer{
+    margin: 5px;
+    height: 20vh;
+    background-color: var(--theme-color);
+    display: flex;
+    /* justify-content: space-evenly; */
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
+.peer-picture{
+    width: 37%;
+    height: 100%;
+    margin-right: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 17px;
+    overflow: hidden;
+}
+
+.peer-picture img{
+    width: 100%;
+    height: 100%;
+}
+
+.peer-info{
+    color: whitesmoke;
+    text-shadow: 0px 0px 5px black;
+}
+
+/*---------------------------------------- Connections ----------------------------------------------------------*/
+.connections{
+    height: 60vh;
+    border: 1px solid black;
+    background-color: white;
+    margin: 5px;
+    border-radius: 20px;
+    overflow: scroll;
+}
+
+.total-vendors{
+    /* border: solid black; */
+    display: flex;
+    justify-content: center;
+    color: var(--theme-color);
+    text-shadow: 0px 0px 5px white ,0px 0px 5px black;
+}
+
+.vendors-list{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.vendor{
+    margin: 5px;
+    height: 20vh;
+    background-color: var(--theme-color);
+    display: flex;
+    /* justify-content: space-evenly; */
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
+.vendor-picture{
+    width: 37%;
+    height: 100%;
+    margin-right: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 17px;
+    overflow: hidden;
+}
+
+.vendor-picture img{
+    width: 100%;
+    height: 100%;
+}
+
+.vendor-info{
+    color: whitesmoke;
+    text-shadow: 0px 0px 5px black;
+}
+
+/* Media Queries */
+@media only screen and ( min-width:900px ){
+    body{
+        background-color: var(--theme-color);
+    }
+    /* ---------------------TESTING----------------- */
+    /* ------------TESTING--------------------     */
+    /* ------------TESTING--------------------     */
+
+    /* ------------TESTING--------------------     *//* ------------TESTING--------------------     */
+
+    /* ------------TESTING--------------------     */
+    /* ------------TESTING--------------------     */
+    /* ------------TESTING--------------------     */
+    /* ------------TESTING--------------------     */
+    /* ------------TESTING--------------------     */
+    /* ------------TESTING--------------------     */
+    /* ------------TESTING--------------------     */
+    /* ------------TESTING--------------------     */
+    /* ------------TESTING--------------------     */
+
+    /* ------------TESTING--------------------     *//* ------------TESTING--------------------     */
+    /* ------------TESTING--------------------     */
+    /* ------------TESTING--------------------     */
+    /* ------------TESTING--------------------     */
+    /* ------------TESTING--------------------     */
+    /* ------------TESTING--------------------     */
+
+    /* ------------TESTING--------------------     */
+
+    .container{
+        /* border: solid; */
+        width: 80%;
+        height: auto;
+        margin-left: 10%;
+        margin-top: 5vh;
+        padding: 10px;
+        border: 10px double var(--theme-color);
+        background-color: white;
+        border-radius: 20px;
+    }
+    .nav{
+        /* border: 2px solid red; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .menu-toggle{
+        display: none;
+    }
+    .nav-list{
+        width: 100%;
+        height: inherit;
+        position: inherit;
+        display: flex;
+        /* border: 5px solid red; */
+        background-color: transparent;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        transform: translateX(0);
+    }
+    .nav-item{
+        width: 100%;
+        opacity: 1;
+        margin: auto;
+        /* background-color: red; */
+    }
+    .nav-link{
+        color: white;
+        font-size: 1.3rem;
+        /* background-color: red; */
+    }
+    .nav-link:hover{
+        color: var(--theme-color);
+        border-radius: 20px;
+        background-color: white;
+        opacity: 1;
+    }
+/* header{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: linear-gradient(to bottom,red);
+}
+.nav
+{
+    height: 7.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.menu-toggle{
+    color: rgb(255, 255, 255);
+    font-size: 2.2rem;
+    position: fixed;
+    right: 2.5rem;
+    cursor: pointer;
+    z-index: 1500;
+}
+.fas.fa-times{
+    display: none;
+}
+.logo{
+    width:280px; height: 120px;
+    margin-right: 15px;
+}
+.nav-list{
+    list-style: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 80%;
+    height: 100vh;
+    background-color: var(--main-font-color-dark);
+    padding: 4.4rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    z-index: 1250;
+    transform: translateX(0%);
+    transition: transform .5s;
+}
+.nav::before{
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, .8);
+    z-index: 1000;
+    opacity: 0;
+    transform: scale(0);
+    transition: opacity .5s;
+}
+.open .fas.fa-times{
+    display: block;
+}
+.open .fas.fa-bars{
+    display: none;
+}
+.fa-bars{
+    text-shadow: 0px 0px 2.6px black;
+}
+.open .nav-list{
+    transform: translateX(0);
+}
+.open .nav::before{
+    opacity: 1;
+    transform: scale(1);
+}
+.nav-item{
+    border-bottom: 2px solid rgba(255, 255, 255, .3);
+}
+.nav-link{
+    display: block;
+    color: black;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    letter-spacing: 2px;
+    margin-right: -2px;
+    transition: color.5s;
+}
+.nav-link:hover{
+    color: wheat;
+} */
+
+    /* ------------TESTING--------------------     */
+    /* ------------TESTING--------------------     */
+    /* ------------TESTING--------------------     */
+    /* ------------TESTING--------------------     */
+    /* ------------TESTING--------------------     */
+    /* ------------TESTING--------------------     */
+    /* ------------TESTING--------------------     */
+    /* ------------TESTING--------------------     */
+    /* ------------TESTING--------------------     */
+    /* ------------TESTING--------------------     */
+    /* ------------TESTING--------------------     *//* ------------TESTING--------------------     */
+    /* ------------TESTING--------------------     */
+    /* ------------TESTING--------------------     */
+    /* ------------TESTING--------------------     */
+    /* ------------TESTING--------------------     */
+    /* ------------TESTING--------------------     */
+    /* ------------TESTING--------------------     */
+
+    /* ------------TESTING--------------------     */
+    /* ------------TESTING--------------------     */
+    /* ------------TESTING--------------------     *//* ------------TESTING--------------------     */
+
+    /* ------------TESTING--------------------     */
+    /* ------------TESTING--------------------     */
+    
+    .menu-toggle{
+        display: none;
+    }
+
+    .profile-picture{
+        padding: 50px;
+        border: 1px solid;
+    }
+
+    .btn{
+        border: 5px double var(--theme-color);
+        width: 80%;
+        margin-left: 10%;
+    }
+    
+    .btn:hover{
+        color: white;
+        background-color: var(--theme-color);
+    }
+
+    .previous-trade{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        height: auto;
+        overflow: visible;
+        /* overflow: scroll; */
+        border: solid;
+    }
+
+    .trade{
+        height: auto;
+    }
+
+    .item{
+        height: auto;
+        /* background-color: var(--theme-color); */
+        /* display: flex;
+        flex-direction: column; */
+        /* border: solid;  */
+    }
+
+    .item h4{
+        font-size: 1.2rem;
+    }
+
+   .peers{
+        height: auto;
+        border: none;
+        overflow: visible;
+    }
+
+    .peers-list{
+        list-style: none;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .peer{
+        margin: 5px;
+        height: 30vh;
+        display: flex;
+        background-color: var(--theme-color);
+        /* justify-content: space-evenly; */
+        align-items: center;
+        border-radius: 20px;
+    }
+
+    .connections{
+        height: auto;
+        border: none;
+        overflow: visible;
+    }
+
+    .vendors-list{
+        list-style: none;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .vendor{
+        margin: 5px;
+        height: 30vh;
+        display: flex;
+        /* justify-content: space-evenly; */
+        align-items: center;
+        border: 2px solid black;
+        border-radius: 20px;
+    }
+}
