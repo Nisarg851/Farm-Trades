@@ -1,0 +1,130 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    outline: 0;
+}
+body{
+    /* background-color: black; */
+    height: 100vh;
+    color: black;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+}
+
+.list-page{
+    width: 50%;
+    height: 80%;
+    border: solid black;
+    position: relative;
+    /* border: 2px solid white; */
+    /* background-color: red; */
+}
+
+.list-box{
+    border: solid green;
+    width: 100%;
+    height: 90%;
+    display: flex;
+    justify-content: end;
+}
+
+.list{
+    width: 100%;
+    border: solid;
+    overflow: scroll;
+}
+
+.input-container{
+    margin-bottom: 0px;
+    width: auto;
+    height: auto;
+    border: solid red;  
+}
+
+.input{
+    width: 100%;
+    /* background-color: black; */
+    border: 2px solid black;
+    border-radius: 20px;
+}   
+
+input{
+    width: 95%;
+    height: 2rem;
+    font-size: large;
+    border: none;
+    border-radius: 20px;
+    position: relative;
+    left: 3px;
+}
+
+h1{
+    position: relative;
+    font-size: 5rem;
+    left: 5rem;
+}
+
+.btn-add{
+    background-color: white;
+    border: none;
+    color:rgb(31, 218, 31);
+    font-size: 2rem;
+}
+
+.btn{
+    margin-right: 0px;
+    padding: 0.5rem;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.todo-container{
+    float: right;
+    width: 50%;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: greenyellow;
+    border-radius: 20px;
+    color: black;
+    font-size: xx-large;
+    transition: all 0.2s ease-in;
+}
+
+.todo{
+    flex: 1;
+    /* padding-right: 5rem; */
+    /* border: 2px solid yellow; */
+}
+
+.fa-check, .fa-trash{
+    pointer-events: none;
+}
+
+.btn-trashbtn, .btn-checkbtn{
+    color: green;
+    margin: 3px;
+}
+
+.btn-trashbtn{
+    background-color: red;
+}
+
+.btn-checkbtn{
+    background-color: rgb(38, 219, 38);
+}
+
+.todo-done{
+    text-decoration: line-through;
+    text-decoration-color: red;
+    opacity: 0.5;
+}
+
+.todo-delete{
+    transform: translateX(2rem) rotateX(100deg);
+    opacity: 0;
+}

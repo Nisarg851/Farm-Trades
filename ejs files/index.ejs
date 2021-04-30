@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width", user-scalable=no, initial-scale=1.0,
+    maximum-scale=1.0, minimum-scale=1.0>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <title>Farm Trade</title>
+    
+    <link rel="stylesheet" type="text/css" href="css/indexStyle.css">
+    <!--Font awesome CDN-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" 
+    integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    
+    <!--Scroll Reveal CDN-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+
+<body>
+    <!--Header starts-->
+    <header>
+        <div class="container">
+            <nav class="nav">
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                    <i class="fas fa-times"></i>
+                </div>
+                <!-- <a href="index.html" class="logo"><img src="{% static '/css/images/logo6.png' %}" alt="DiverseDarkroom" width="100px" height="120px"></a> -->
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="#hero" onclick="toggle()" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#services" onclick="toggle()" class="nav-link">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#story" onclick="toggle()" class="nav-link">About Us</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a href="#products" onclick="toggle()" class="nav-link">Our Products</a>
+                    </li> -->
+                    <li class="nav-item">
+                        <a href="#footer" onclick="toggle()" class="nav-link">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="admin/Login" class="nav-link" id="sign-in"> Login </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="admin/Registration" class="nav-link" id="sign-up"> Register </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!--Header Ends-->
+
+    <!--Hero Starts-->
+    <section class="hero" id="hero">
+        <div class="container">
+            <h1 class="headline">
+                Farm Trades
+            </h1>
+            <div class="headline-description">
+                <div class="separator">
+                    <div class="line line-left"></div>
+                    <div class="asterisk"><i class="fas fa-asterisk"></i></div>
+                    <div class="line line-right"></div>
+                </div>
+                <div class="single-animation">
+                    <h5> Explore Market's Backbone</h5>
+                    <a href="#services" class="btn cta-btn">Explore</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Hero ends-->
+
+    <!--Services started-->
+    <div class="mid-sections">
+        <section class="services" id="services">
+            <div class="container">
+                <div class="global-headline animate-top">
+                    <h1 class="headline headline-dark">Services Provide By US</h1>
+                    <div class="asterisk"><i class="fas fa-asterisk"></i></div>
+                </div>
+                <div class="service-content animate-bottom">
+                    <div class="card">                   
+                        <div class="box1">
+                            <i class="fa fa-globe"></i>
+                            <div class="text">Connections</div>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="box1">
+                            <i class="fa fa-edit"></i>
+                            <div class="text">Instant Messaging</div>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="box1">
+                            <i class="fa fa-desktop"></i>
+                            <div class="text">Products Showcase</div>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Discover Our story starts-->
+        <section class="discover-our-story" id="story">
+            <div class="container">
+                <div class="diversedarkroom-info">
+                    <div class="diversedarkroon-info-image animate-left">
+                        <img src="/images/farmer-vendor-handshake.jpg" alt="###" style="transform : scale(0.8)">
+                    </div>
+                    <div class="diversedarkroom-description padding-right animate-left" style="margin-left:30px">
+                        <div class="global-headline">
+                            <h1 class="headline headline-dark">About Us</h1>
+                            <div class="asterisk"><i class="fas fa-asterisk"></i></div>
+                        </div>
+                        <p>
+                            First, let’s get a birds-eye view. The bio must satisfy at least two types of visitors:
+                            buyers and companies who scan the page for your skills, accomplishments, location, 
+                            and generally just looking for facts
+                            other people looking for a personal connection, reading your history, 
+                            wanting to see portraits/photos, looking for inspiration
+                            Your (difficult) job is to try to combine these two aspects in a clear and concise manner, 
+                            while removing the superfluous. We’ll focus more on the personality aspects, because psychology 
+                            plays an important role in business relationships too, but don’t neglect the simple enumeration
+                            of facts where it’s due.
+                        </p>
+                    </div>
+                </div>
+                <div class="diversedarkroom-info">
+                    <div class="diversedarkroom-description padding-right animate-left">
+                        <div class="global-headline">
+                            <h1 class="headline headline-dark">Our  Story</h1>
+                            <div class="asterisk"><i class="fas fa-asterisk"></i></div>
+                        </div>
+                        <p>
+                            First, let’s get a birds-eye view. The bio must satisfy at least two types of visitors:
+                            buyers and companies who scan the page for your skills, accomplishments, location, 
+                            and generally just looking for facts
+                            other people looking for a personal connection, reading your history, 
+                            wanting to see portraits/photos, looking for inspiration
+                            Your (difficult) job is to try to combine these two aspects in a clear and concise manner, 
+                            while removing the superfluous. We’ll focus more on the personality aspects, because psychology 
+                            plays an important role in business relationships too, but don’t neglect the simple enumeration
+                            of facts where it’s due.
+                        </p>
+                    </div>
+                    <div class="diversedarkroon-info-image animate-right">
+                        <img src="/images/farmer-vendor.jpg" alt="###">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Discover Our story ends-->
+    </div>
+    <!--footer starts-->
+    <footer id="footer">
+        <div class="container">
+            <div class="back-to-top">
+                <a href="#hero"><i class="fas fa-chevron-up"></i></a>
+            </div>
+            <div class="footer-content">
+                <div class="footer-content-about animate-top">
+                    <h4>About Farm Trade</h4>
+                    <div class="asterisk"><i class="fas fa-asterisk"></i></div>
+                    <p>
+                        First, let’s get a birds-eye view. The bio must satisfy at least two types of visitors:
+                        buyers and companies who scan the page for your skills, accomplishments, location, 
+                        and generally just looking for facts
+                        other people looking for a personal connection, reading your history, 
+                        wanting to see portraits/photos, looking for inspiration
+                    </p>
+                </div>
+                <div class="footer-content-divider animate-bottom contact">
+                    <div class="contact-form-container">
+                        <form action="FormSubmit/" method="POST" class="contact-form" onsubmit="return validation()">
+                            <h4>Sent Message</h4>
+
+                            <div class="error-message" id="error-message"></div>
+
+                            <div class="inputbox">
+                                <input type="text" name="name" required placeholder="Full Name" id="name">
+                            </div>
+                            <div class="inputbox">
+                                <input type="email" name="email" required placeholder="Email" id="email">
+                            </div>
+                            <div class="inputbox">
+                                <textarea name="message" required placeholder="Type your message" id="message"
+                                 rows="7"></textarea>
+                            </div>
+                            <div class="inputbox">
+                                <input type="Submit" name="" id="submit" value="Send">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="contact-info">
+                        <div class="box">
+                            <div class="icon"><i class="fa fa-map-marker-alt"></i></div>
+                            <div class="text">
+                                <h4>Address</h4>
+                                <p> R.N.G.Patel Institute Of Technology, Isroli</p>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="icon"><i class="fa fa-mobile"></i></div>
+                            <div class="text">
+                                <h4>Contact Us</h4>
+                                <p>1234567890</p>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="icon"><i class="fa fa-envelope"></i></div>
+                            <div class="text">
+                                <h4>Email</h4>
+                                <p>ContactFarmTrade@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-content-divider animate-bottom">
+                    <div class="social-media">
+                        <h4>Follow Along</h4>
+                        <ul class="social-icons">
+                            <li>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fab fa-facebook-square"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--footer ends-->
+
+    <script src="js/index.js"></script>
+</body>
+</html>

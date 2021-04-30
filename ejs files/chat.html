@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="chatStyle.css" rel="stylesheet">
+    <title>Chat</title>
+</head>
+<body>
+    <button class="btn connect-btn" onclick="this.innerHTML = 'Request Sent';">Connect?</button>
+    <div class="list-page">
+        <div class="list-box">
+            <ul class="list" style="list-style-type: none;"></ul>
+        </div>
+        <div class="input-container">
+            <div class="input">
+                <input type="text" placeholder="Message"/>
+                <button class="btn btn-add">
+                    <i class="fa fa-user">+</i>
+                </button>
+            </div>  
+        </div>      
+    </div>
+    <script src="chat.js"></script>
+</body>
+</html>

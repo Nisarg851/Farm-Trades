@@ -1,0 +1,154 @@
+<!DOCTYPE html5>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" 
+    integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="/css/farmerProfileStyle.css">
+    <title>Profile</title>
+</head>
+<body>
+    <header>
+            <nav class="nav">
+                <div class="menu-toggle">
+                    <img class="bars" src="/images/MENU-BAR.PNG" class="circle" alt="M">
+                    <i class="fas fa-times"></i>
+                </div>
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="/" onclick="toggle()" class="nav-link">Market</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/admin/edit-product" onclick="toggle()" class="nav-link">Add Product</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/admin/ChatList" onclick="toggle()" class="nav-link">Peers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/index#footer" onclick="toggle()" class="nav-link">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/index" class="nav-link" id="sign-in"> Log-out </a>
+                    </li>
+                </ul>
+            </nav>
+    </header>
+    <div class="container">
+        <div class="request">
+            <a href="/admin/request/<%= name %>" class="btn connnect-btn"
+                style="padding : 5px; margin: 0px; color: black; link-style:none; text-decoration:none"  
+                onclick="this.innerHTML='Request Sent'">
+                <% if(requested==1){ console.log(this); %>
+                    Request Sent
+                <%} else if(requested==2){%>
+                    Connected
+                <%} else {%>
+                    Connect?
+                <%}%> 
+            </a>
+        </div>
+        <div class="user-profile">
+            <div class="user-info">
+                <section class="connection">
+                    <h1 class="circle"><%= totalConnections %></h1>
+                    <h3>Connections</h3>
+                </section>
+                <section class="profile">
+                    <div class="profile-picture circle">
+                        <img src="/images/person.PNG" alt="Profile Pic"/>
+                    </div>
+                    <h3><%= name %></h3>
+                    <h4><%= email %></h4>
+                    <h3><%= occupation %></h3>
+                    <h5><%= address %></h5>
+                </section>
+                <section class="message">
+                    <h1 class="circle"><i class="fa fa-message">03</i></h1>
+                    <h3>Messages</h3>
+                </section>
+            </div>
+            <div class="user-info-menu">
+                <ul>
+                    <li class="active" id="PreviousTrades" ><a class="btn">Previous Trade</a></li>
+                    <li id="PeerFarmers" ><a class="btn">Peers</a></li>
+                    <li id="Connections"><a class="btn">Connections</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section-preview">
+        </div>
+
+        <template id="PreviousTradeTemplate">
+            <section class="previous-trade">
+                <% trades.forEach( trade => { %>
+                    <div class="trade">
+                        <h2 class="trade-date"><%= trade.tradeDate %></h2>
+                        <ul class="trade-item-list">
+                            <% trade.tradeItems.forEach( item => { %>
+                                <li class="item">
+                                    <img src="<%= item.image %>" alt="item1" />
+                                    <h4 class="trade-item"><%= item.name %></h4>
+                                    <h4 class="trade-price"><%= item.price %></h4>
+                                </li>
+                            <% }); %>
+                        </ul>
+                    </div>
+                <% }); %>
+            </section>
+        </template>
+        <template id="PeerFarmersTemplate">
+            <div class="peers">
+                <h3 class="total-peers">Peers : <%= totalPeers %></h3>
+                <ul class="peers-list">
+                    <% peerList.forEach( peer => {%>
+                        <form action="/admin/search" method="POST">
+                            <input type="hidden" name="search" id="search" value="<%= peer.name %>"/>
+                            <input type="hidden" name="known" id="known" value=2/>
+                            <li class="peer">
+                                <div class="peer-picture">
+                                    <img src="<%= peer.image %>" alt="<%= peer.name %>"/>
+                                </div>
+                                <div class="peer-info">
+                                    <h4> <%= peer.name %> </h4>
+                                    <h4> <%= peer.location %> </h4>
+                                    <h4> <%= peer.occupation %> </h4>
+                                    <button type="submit" class="btn" style="width:auto; padding:5px;">View Profile</button>
+                                </div>
+                            </li>
+                        </form>
+                    <% }); %>
+                </ul>
+            </div>
+        </template>
+
+        <template id="ConnectionsTemplate">
+            <div class="connections">
+                <h3 class="total-vendors">Connections : <%= totalConnections %></h3>
+                <ul class="vendors-list">
+                    <% connectionList.forEach( connection => { %>
+                        <form action="/admin/search" method="POST">
+                            <input type="hidden" name="search" id="search" value="<%= connection.name %>"/>
+                            <input type="hidden" name="known" id="known" value=2/>
+                            <li class="vendor">
+                                <div class="vendor-picture">
+                                    <img src="<%= connection.image %>" alt="<%= connection.name %>"/>
+                                </div>
+                                <div class="vendor-info">
+                                    <h4><%= connection.name %></h4>
+                                    <h4> <%= connection.location %> </h4>
+                                    <h4> Trades: <%= connection.trade %> </h4>
+                                    <button type="submit" class="btn" style="width:auto; padding:5px;">View Profile</button>
+                                </div>
+                            </li>
+                        </form>
+                    <% }); %>
+                </ul>
+            </div>
+        </template>
+    </div>
+    <script rel="script" type="application/ecmascript" src="/js/farmerProfile.js"></script>
+</body>
+</html>

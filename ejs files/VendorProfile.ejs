@@ -1,0 +1,284 @@
+<!DOCTYPE html5>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" 
+    integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="/css/farmerProfileStyle.css">
+    <title>Profile</title>
+</head>
+<body>
+    <header>
+            <nav class="nav">
+                <div class="menu-toggle">
+                    <img class="bars" src="/images/MENU-BAR.PNG" class="circle" alt="M">
+                    <i class="fas fa-times"></i>
+                </div>
+                <!-- <a href="index.html" class="logo"><img src="{% static '/css//images/logo6.png' %}" alt="DiverseDarkroom" width="100px" height="120px"></a> -->
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="/" onclick="toggle()" class="nav-link">Market</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/admin/edit-product" onclick="toggle()" class="nav-link">Add Product</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./Peers.html" onclick="toggle()" class="nav-link">Peers</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a href="#products" onclick="toggle()" class="nav-link">Our Products</a>
+                    </li> -->
+                    <li class="nav-item">
+                        <a href="/index#footer" onclick="toggle()" class="nav-link">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/index" class="nav-link" id="sign-in"> Log-out </a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a href="./Registration.html" class="nav-link" id="sign-up"> Register </a>
+                    </li> -->
+                </ul>
+            </nav>
+    </header>
+    <div class="container">
+        <div class="user-profile">
+            <div class="user-info">
+                <section class="connection">
+                    <h1 class="circle">{%= totalConnections %}</h1>
+                    <h3>Connections</h3>
+                </section>
+                <section class="profile">
+                    <div class="profile-picture circle">
+                        <img src="/images/person.PNG" alt="Profile Pic"/>
+                    </div>
+                    <h3>{%= name %}</h3>
+                    <h4>{%= email %}</h4>
+                    <h3>{%= occupation %}</h3>
+                    <h5>{%= address %}</h5>
+                </section>
+                <section class="message">
+                    <h1 class="circle"><i class="fa fa-message">03</i></h1>
+                    <h3>Messages</h3>
+                </section>
+            </div>
+            <div class="user-info-menu">
+                <ul>
+                    <li class="active" id="PreviousTrades" ><a class="btn">Previous Trade</a></li>
+                    <li id="PeerFarmers" ><a class="btn">Peers</a></li>
+                    <li id="Connections"><a class="btn">Connections</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="section-preview">
+        </div>
+
+    <!-- #################################################################################################################     -->
+    <!-- #################################################################################################################     -->
+    <!-- #################################################################################################################     -->
+
+        <template id="PreviousTradeTemplate">
+            <section class="previous-trade">
+                {% trades.forEach( trade => { %}
+                    <h2 class="trade-date">{%= tradeDate %}</h2>
+                    <ul class="trade-item-list">
+                        {% tradeItems.forEach( item => { %}
+                            <li class="item">
+                                <img src="{%= item.image %}" alt="item1" />
+                                <h4 class="trade-item">{%= item.name %}</h4>
+                                <h4 class="trade-price">{%= item.price %}</h4>
+                            </li>
+                        {% } %}
+                    </ul>
+                {% } %}
+                <!-- <div class="trade">
+                    <h2 class="trade-date">12 Sept, 2020</h2>
+                    <ul class="trade-item-list">
+                        <li class="item">
+                            <img src="/images/Mango.PNG" alt="item1" />
+                            <h4 class="trade-item">Mango</h4>
+                            <h4 class="trade-price">1500 rs. / 100kg</h4>
+                        </li>
+                        <li class="item">
+                            <img src="/images/Tomato.PNG" alt="item1" />
+                            <h4>Tomato</h4>
+                            <h4>1300 rs. / 100kg</h4>
+                        </li>   
+                        <li class="item">
+                            <img src="/images/Pomegranate.PNG" alt="item1" />
+                            <h4>Pomegranate</h4>
+                            <h4>1600 rs. / 100kg</h4>
+                        </li>
+                    </ul>       
+                </div>
+                <div class="trade">
+                    <h1 class="trade-date">12 Sept, 2020</h1>
+                    <ul class="trade-item-list">
+                        <li class="item">
+                            <img src="/images/Pomegranate.PNG" alt="item1" />
+                            <h4>Pomegranate</h4>
+                            <h4>1600 rs. / 100kg</h4>
+                        </li>
+                        <li class="item">
+                            <img src="/images/Mango.PNG" alt="item1" />
+                            <h4 class="trade-item">Mango</h4>
+                            <h4 class="trade-price">1500 rs. / 100kg</h4>
+                        </li>
+                    </ul>
+                </div>
+                <div class="trade">
+                    <h1 class="trade-date">12 Sept, 2020</h1>
+                    <ul class="trade-item-list">
+                        <li class="item">
+                            <img src="/images/Mango.PNG" alt="item1" />
+                            <h4 class="trade-item">Mango</h4>
+                            <h4 class="trade-price">1500 rs. / 100kg</h4>
+                        </li>
+                    </ul>
+                </div>
+                <div class="trade">
+                    <h1 class="trade-date">12 Sept, 2020</h1>
+                    <ul class="trade-item-list">
+                        <li class="item">
+                            <img src="/images/Tomato.PNG" alt="item1" />
+                            <h4>Tomato</h4>
+                            <h4>1300 rs. / 100kg</h4>
+                        </li>
+                        <li class="item">
+                            <img src="/images/Pomegranate.PNG" alt="item1" />
+                            <h4>Pomegranate</h4>
+                            <h4>1600 rs. / 100kg</h4>
+                        </li>
+                    </ul>
+                </div>
+                <div class="trade">
+                    <h1 class="trade-date">12 Sept, 2020</h1>
+                    <ul class="trade-item-list">
+                        <li class="item">
+                            <img src="/images/Mango.PNG" alt="item1" />
+                            <h4 class="trade-item">Mango</h4>
+                            <h4 class="trade-price">1500 rs. / 100kg</h4>
+                        </li>
+                    </ul>   
+                </div>
+                <div class="trade">
+                    <h1 class="trade-date">12 Sept, 2020</h1>
+                    <ul class="trade-item-list">
+                        <li class="item">
+                            <img src="/images/Pomegranate.PNG" alt="item1" />
+                            <h4>Pomegranate</h4>
+                            <h4>1600 rs. / 100kg</h4>
+                        </li>
+                    </ul>
+                </div> 
+                <div class="trade">
+                    <h1 class="trade-date">12 Sept, 2020</h1>
+                    <ul class="trade-item-list">
+                        <li class="item">
+                            <img src="/images/Tomato.PNG" alt="item1" />
+                            <h4>Tomato</h4>
+                            <h4>1300 rs. / 100kg</h4>
+                        </li>
+                        <li class="item">
+                            <img src="/images/Pomegranate.PNG" alt="item1" />
+                            <h4>Pomegranate</h4>
+                            <h4>1600 rs. / 100kg</h4>
+                        </li>
+                        <li class="item">
+                            <img src="/images/Mango.PNG" alt="item1" />
+                            <h4 class="trade-item">Mango</h4>
+                            <h4 class="trade-price">1500 rs. / 100kg</h4>
+                        </li>
+                    </ul> 
+                </div> -->
+            </section>
+        </template>
+
+    <!-- #################################################################################################################     -->
+    <!-- #################################################################################################################     -->
+    <!-- #################################################################################################################     -->
+
+        <template id="PeerFarmersTemplate">
+            <div class="peers">
+                <h3 class="total-peers">Peers : 3</h3>
+                <ul class="peers-list">
+                    <li class="peer">
+                        <div class="peer-picture">
+                            <img src="/images/person.PNG" alt="Mr. Bhavya Desai"/>
+                        </div>
+                        <div class="peer-info">
+                            <h4> Mr. Bhavya Desai </h4>
+                            <h4> Location: Bardoli </h4>
+                            <h4> occupation: Farmer </h4>
+                        </div>
+                    </li>
+                    <li class="peer">
+                        <div class="peer-picture">
+                            <img src="/images/person.png" alt="Mr. Abhishek Gohil"/>
+                        </div>
+                        <div class="peer-info">
+                            <h4> Mr. Abhishek Gohil </h4>
+                            <h4> Location: Surat</h4>
+                            <h4> occupation: Vendor </h4>
+                        </div>
+                    </li>
+                    <li class="peer">
+                        <div class="peer-picture">
+                            <img src="/images/person.png" alt="Mr. Tejus Patel"/>
+                        </div>
+                        <div class="peer-info">
+                            <h4> Mr. Tejus Patel</h4>
+                            <h4> Location: Bardoli </h4>
+                            <h4> Occupation: Vendor </h4>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </template>
+
+    <!-- #################################################################################################################     -->
+    <!-- #################################################################################################################     -->
+    <!-- #################################################################################################################     -->
+
+        <template id="ConnectionsTemplate">
+            <div class="connections">
+                <h3 class="total-vendors">Connections : 24</h3>
+                <ul class="vendors-list">
+                    <li class="vendor">
+                        <div class="vendor-picture">
+                            <img src="/images/person.PNG" alt="mr. tejus patel"/>
+                        </div>
+                        <div class="vendor-info">
+                            <h4> Mr. Tejus Patel</h4>
+                            <h4> Location:Bardoli </h4>
+                            <h4> Trades:5 </h4>
+                        </div>
+                    </li>
+                    <li class="vendor">
+                        <div class="vendor-picture">
+                            <img src="/images/person.png" alt="Mr. Abhishek Gohil"/>
+                        </div>
+                        <div class="vendor-info">
+                            <h4> Mr. Abhishek Gohil </h4>
+                            <h4> Location: Surat</h4>
+                            <h4> Trades:3 </h4>
+                        </div>
+                    </li>
+                    <li class="vendor">
+                        <div class="vendor-picture">
+                            <img src="/images/person.png" alt="Mr. Lokesh Patel"/>
+                        </div>
+                        <div class="vendor-info">
+                            <h4> Mr. Lokesh Patel</h4>
+                            <h4> Location: Surat </h4>
+                            <h4> Trades:2 </h4>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </template>
+    </div>
+    <script rel="script" type="application/ecmascript" src="/js/FarmerProfile.js"></script>
+</body>
+</html>         
