@@ -41,15 +41,14 @@ app.use(authRoutes);
 
 app.use(errorController.get404);
 
-mongoose.connect('mongodb+srv://Nisarg851:sarg12ni34@cluster0.vjesx.mongodb.net/shop?retryWrites=true&w=majority'
-                ,{ useUnifiedTopology:true, useNewUrlParser:true})
+mongoose.connect('',{ useUnifiedTopology:true, useNewUrlParser:true})
         .then(()=>{
             User.findOne()
                 .then(user => {
                     if(!user){
                         const user = new User({
                             userName : 'Nisarg851',
-                            email : 'nisargmahyavanshi@gmail.com',
+                            email : '',
                             cart : {
                                 items : []
                             }
