@@ -1,0 +1,137 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    perspective: 900px;
+    background-color: rgb(1, 187, 163);
+}
+
+.container{
+    width: 60%;
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title-container{
+    transform: translate(-3px);
+    /* border: solid; */
+}
+
+.title-container img{
+    margin-left: 25px;
+    background-color: rgb(1, 187, 163);
+}
+
+.title-container h1{
+    color: whitesmoke;
+    text-shadow: 2px 2px black;
+}
+
+.card{
+    transform-style: preserve-3d;
+    width: 90vw;
+    height: 23rem;
+    position: relative;
+    margin: 4rem; 
+    border-radius: 10%;
+    background-color: rgb(253, 250, 250);
+    /* background-size: cover; */
+}
+
+#error{
+    padding: 5px;
+    color:white; 
+    background-color:red; 
+    border: 2px solid black;
+    border-radius:20px; 
+}
+
+form{
+    width: 100%;
+    height: 100%;
+    /* border: solid; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+input:not([type="checkbox"]){
+    background-color: rgba(0,0,0,0);
+    border: none;
+    border-bottom: 0.8px solid black;
+    outline: none;
+    padding-top: 30px;
+    font-size: larger;
+}
+
+.input-group{
+    width: 80%;
+    height: 10%;
+    /* border: solid; */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(0, 155, 202);
+}
+
+.input-group label{
+    width: 80%;
+    height: 10%;
+    position: absolute;
+    /* border: solid; */
+    padding-top: 20px;
+    transition: all 0.2s ease;
+}
+
+.input-group input:focus + label, .input-group input:valid + label{
+    /* border-bottom: 0.8px solid rgb(0, 255, 0); */
+    color: rgb(1, 187, 163);
+    padding-top: 0px;
+    transition: all 0.2s ease;
+}
+
+.same-row:not(label){
+    width: 80%;
+}
+
+button{
+    width: 50%;
+    height: 10%;
+    background-color: whitesmoke;
+    color: rgb(1, 187, 163);
+    border-radius: 20px;
+    border: 2px solid;
+}
+
+button:hover{
+    background-color: rgb(1, 187, 163);
+    color: whitesmoke;
+}
+
+@media only screen and (min-width: 600px){
+    .card{
+        width: 60vw;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    .card{
+        width: 40vw;
+    }
+    
+}

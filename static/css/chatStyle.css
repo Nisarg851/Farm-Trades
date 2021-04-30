@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    display: grid;
+    grid-template-rows: 80px auto 80px;
+}
+
+#menu{
+	border: none;
+	background-color: white;
+	font-size:35px;
+	margin-left: 30px;
+    margin-right: 30px;
+}
+
+#profile{
+	border: none;
+	background-color: white;
+	font-size: 40px;
+    margin-left:100px ;
+    margin-top:5px;
+}
+
+#name{
+    margin-left: 15px;
+	font-size:40px;
+	display: inline;
+}
+
+#lastseen{
+    margin-left:270px;
+}
+
+.header{
+    margin-top: 20px;
+}
+
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: gray;
+}
+
+.text{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 75px;
+}
+
+.text > input{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    width: 500px;
+}
+
+#file{
+    display: none;
+}
+
+.btn__file{
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: none;
+}
+
+
+.send > button{
+    padding: 20px;
+    border-radius: 50px;
+    outline: none;
+    background-color: lightgreen;
+    cursor: pointer;
+ 
+}
+
+.send{
+    margin-right: 600px;
+}
+
+.emoji{
+    margin-left: 600px;
+}
+.send > button > i{
+    font-size:20px
+}
+
+.emoji > button{
+    padding: 20px;
+    border-radius: 50px;
+    outline: none;
+    background-color: lightgreen;
+    cursor:pointer;
+}
+
+.emoji > button > i{
+    font-size:20px
+}
+
+
+/* ----------------------MESSAGE BOX ------------------------*/
+
+
+
+.search_box{
+    display: flex;
+    align-items: center;
+    border-radius: 55px;
+    background-color: white;
+}
+.search_box > input{
+    background-color: transparent;
+    border-radius: 55px;
+    outline: none;
+    width: 500px;
+    margin-left: 10px;
+    border:none;
+    align-items: center;
+
+}
+
+.search_box > button{
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: transparent;
+    border-bottom-right-radius: 2px; 
+}
+
